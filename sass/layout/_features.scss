@@ -1,0 +1,33 @@
+.features {
+  background-color: #f6f6f6;
+
+  &__box {
+    padding: 1%;
+    box-sizing: border-box;
+
+    i {
+      color: $color-primary;
+      font-size: 5rem;
+      display: inline-block;
+      margin: 1rem 0 2rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.features__heading-2,
+.features__heading-2 + p {
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: $color-primary;
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+}

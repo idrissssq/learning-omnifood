@@ -1,0 +1,17 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Idris G.",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "waypoints": "^4.0.1"
+  }
+}

@@ -1,0 +1,68 @@
+.steps {
+  background-color: #f6f6f6;
+  &__box {
+    box-sizing: border-box;
+
+    &:first-child {
+      text-align: right;
+      padding-right: 3%;
+    }
+
+    &:last-child {
+      padding-left: 3%;
+    }
+
+    img {
+      width: 40%;
+    }
+  }
+
+  &__work {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+
+    &-count {
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 1rem;
+      float: left;
+      margin-right: 2rem;
+    }
+    &-text {
+      padding-top: 0.55rem;
+
+      &:last-of-type {
+        padding-top: 1.4rem;
+      }
+    }
+  }
+
+  &__heading-2 {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: $color-primary;
+      width: 30rem;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.btn-app {
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  img {
+    margin-top: 3rem;
+    width: 15rem;
+    height: auto;
+  }
+}

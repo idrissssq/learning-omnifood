@@ -1,0 +1,58 @@
+.cities {
+
+  &__heading {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: $color-primary;
+      width: 30rem;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+
+  &__heading-3 {
+    font-size: 1.8rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  &__feature {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+
+    i {
+      color: $color-primary;
+      text-align:center;
+      display:inline-block;
+      width:3rem;
+      line-height:1.6;
+      vertical-align: middle;
+      margin-top:-.4rem;
+    }
+
+    p {
+      display: inline-block;
+    }
+
+    a:link,a:visited {
+      text-decoration: none;
+      color:$color-primary;
+      padding-bottom:1px;
+      border-bottom: 1px solid $color-primary;
+      transition: all .2s;
+    }
+
+    a:hover, a:active {
+      color:#555;
+      border-bottom:transparent;
+      // text-decoration: none;
+
+    }
+  }
+}

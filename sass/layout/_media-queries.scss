@@ -1,0 +1,166 @@
+@include respond(desktop) {
+  .hero__text-box {
+    width: 100rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .header {
+    height: 90vh;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+@include respond(tablet-l) {
+  :root {
+    font-size: 55%; // defines 1 rem = 9.6 pixels
+  }
+  .header {
+    height: 80vh;
+  }
+
+  .hero__text-box {
+    top: 45%;
+    width: 80rem;
+  }
+  p.features__copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .header__logo-white {
+    height: 9rem;
+  }
+  .steps {
+    & img {
+      width: 50%;
+    }
+  }
+  .signup__planBox {
+    margin: 0 2%;
+    // text-align: center;
+  }
+}
+
+@include respond(tablet-p) {
+  :root {
+    font-size: 45%; 
+  }
+  .header {
+    height: 70rem;
+  }
+
+  .hero__text-box {
+    top: 45%;
+    width: 60rem;
+    text-align: center;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+    padding: 1% 2%;
+  }
+
+  .header__nav-main {
+    display:none;
+    float:left;
+    margin-top: 2rem;
+
+    li {
+      display: block;
+      margin-left: 2.5rem;
+
+      a:link, a:visited {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .header__logo-white {
+    height: 7rem;
+  }
+
+  .signup__planBox {
+    width: 40%;
+    height: auto;
+    margin: 2rem auto;
+    // text-align: center;
+  }
+
+  .testimonials__quote {
+    width: 80%;
+    padding: 1rem;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 1rem auto;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+  .form__contact-form {
+    width: 100%;
+  }
+}
+
+@include respond(phone) {
+  :root {
+    font-size: 45%;
+  }
+  .header {
+    height: 60rem;
+  }
+
+  .hero__text-box {
+    top: 35%;
+    text-align: center;
+    width: 50rem;
+  }
+  .steps__box:first-child {
+    display: none;
+  }
+
+  .steps__box:last-child {
+    width: 100%;
+  }
+
+  .btn-app {
+    text-align: center;
+  }
+  .btn-app img {
+    margin-top: 2rem;
+    width: 12rem;
+  }
+
+  // .box, .features__box, h2 {
+  //   padding:2rem;
+  // }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  // .header__logo-white {
+  //   display: none;
+  // }
+
+  section {
+    padding: 5rem 2rem;
+  }
+
+  .signup__planBox {
+    width: 100%;
+  }
+
+  // .header__nav {
+  //   display:none;
+  // }
+}

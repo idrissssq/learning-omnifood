@@ -1,0 +1,18 @@
+.js__wp-1,
+.js__wp-2,
+.js__wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js__wp-1.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js__wp-1.animated,
+.js__wp-2.animated,
+.js__wp-3.animated {
+  opacity: 1;
+}

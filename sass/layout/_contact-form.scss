@@ -1,0 +1,36 @@
+.form {
+  font-size: 1.6rem;
+
+  &__heading {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: $color-primary;
+      width: 30rem;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+
+
+  &__contact-form {
+    width:60%;
+    margin:0 auto;
+  }
+
+  textarea, input[type=text], input[type=email], select {
+    resize:none;
+    width:100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+
+  input[type=checkbox] {
+    margin: 1rem .5rem 1rem 0;
+  }
+
+  *:focus {
+    outline:none;
+  }
+}
