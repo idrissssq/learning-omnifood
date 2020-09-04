@@ -9,7 +9,7 @@
   "author": "Idris G.",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "waypoints": "^4.0.1"
